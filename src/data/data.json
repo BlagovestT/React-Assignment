@@ -1,0 +1,140 @@
+{
+  "solutions": [
+    {
+      "id": 1,
+      "imageUrl": "src/assets/solution1.jpg",
+      "title": "Optimize",
+      "subtitle": "Advanced Crop Nutrition",
+      "description": "Optimize your crop nutrition with our advanced solutions.",
+      "ctaButtonLabel": "Learn more"
+    },
+    {
+      "id": 2,
+      "imageUrl": "src/assets/solution2.jpg",
+      "title": "Enhance",
+      "subtitle": "Innovative Products",
+      "description": "Enhance your yield with our innovative products.",
+      "ctaButtonLabel": "Learn more"
+    },
+    {
+      "id": 3,
+      "imageUrl": "src/assets/solution3.jpg",
+      "title": "Expert advice",
+      "subtitle": "Professional Support",
+      "description": "Get expert advice and support for your farming needs.",
+      "ctaButtonLabel": "Learn more"
+    },
+    {
+      "id": 4,
+      "imageUrl": "src/assets/solution4.jpg",
+      "title": "Smart Monitoring",
+      "subtitle": "Real-time Technology",
+      "description": "Monitor your crops in real-time with our smart technology tools.",
+      "ctaButtonLabel": "Learn more"
+    },
+    {
+      "id": 5,
+      "imageUrl": "src/assets/solution5.jpg",
+      "title": "Sustainable Growth",
+      "subtitle": "Long-term Productivity",
+      "description": "Adopt sustainable practices for long-term farm productivity.",
+      "ctaButtonLabel": "Learn more"
+    }
+  ],
+  "featured": [
+    {
+      "id": 101,
+      "imageUrl": "src/assets/grassn-img.jpg",
+      "title": "GrassN Aray grassN",
+      "subtitle": "Optimal greenland management",
+      "description": "Discover how GrassN helps you plan optimal greenland management",
+      "ctaButtonLabel": "Discover"
+    },
+    {
+      "id": 102,
+      "imageUrl": "src/assets/grassn-request.jpg",
+      "title": "Request a quote",
+      "subtitle": "Get personalized pricing",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi mollitia porro",
+      "ctaButtonLabel": "Get Quote"
+    }
+  ],
+  "events": [
+    {
+      "id": 201,
+      "imageUrl": "src/assets/events1.jpg",
+      "title": "New event in Oregon",
+      "subtitle": "Agricultural Conference",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia cupiditate voluptas commodi",
+      "ctaButtonLabel": "Explore"
+    },
+    {
+      "id": 202,
+      "imageUrl": "src/assets/event2.jpg",
+      "title": "Brand new research",
+      "subtitle": "Scientific Study Release",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia cupiditate voluptas commodi",
+      "ctaButtonLabel": "View Details"
+    }
+  ],
+  "podcast": [
+    {
+      "id": 301,
+      "imageUrl": "src/assets/podcast1.jpg",
+      "title": "Farming in the 21st century",
+      "subtitle": "Modern Agriculture Insights",
+      "description": "",
+      "ctaButtonLabel": "Listen Now"
+    },
+    {
+      "id": 302,
+      "imageUrl": "src/assets/podcast2.jpg",
+      "title": "Expert insights ",
+      "subtitle": "Environmental Best Practices",
+      "description": "",
+      "ctaButtonLabel": "Play Episode"
+    }
+  ],
+  "news": [
+    {
+      "id": 401,
+      "imageUrl": "src/assets/newsimg1.jpg",
+      "title": "Potato new research",
+      "subtitle": "Agricultural Innovation",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia cupiditate voluptas commodi",
+      "ctaButtonLabel": "Read Article"
+    },
+    {
+      "id": 402,
+      "imageUrl": "src/assets/newsimg2.jpg",
+      "title": "No rain foreseen",
+      "subtitle": "Weather Update",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia cupiditate voluptas commodi",
+      "ctaButtonLabel": "Full Story"
+    },
+    {
+      "id": 403,
+      "imageUrl": "src/assets/newsimg3.jpg",
+      "title": "This year's harvest",
+      "subtitle": "Seasonal Report",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia cupiditate voluptas commodi",
+      "ctaButtonLabel": "Learn More"
+    },
+    {
+      "id": 404,
+      "imageUrl": "src/assets/newsimg4.jpg",
+      "title": "Cow's are happier",
+      "subtitle": "Animal Welfare News",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia cupiditate voluptas commodi",
+      "ctaButtonLabel": "Read More"
+    },
+    {
+      "id": 405,
+      "imageUrl": "src/assets/newsimg4.jpg",
+      "title": "Cow's are happier",
+      "subtitle": "Animal Welfare News",
+      "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus, aspernatur? Odio quia cupiditate voluptas commodi",
+      "ctaButtonLabel": "Read More"
+    }
+  ]
+}
