@@ -3,7 +3,7 @@ import Skeleton from "react-loading-skeleton";
 import {
   SkeletonSectionContainer,
   SkeletonContent,
-} from "./SkeletonSection.styles"; // Adjusted import path
+} from "./SkeletonSection.styles.ts"; // Adjusted import path
 
 export const SkeletonSection: React.FC = () => {
   return (
