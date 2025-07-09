@@ -7,7 +7,7 @@ type AddButtonProps = {
   label: string;
 };
 
-export const AddButton: React.FC<AddButtonProps> = ({ section, label }) => {
+export const AddButton: React.FC<AddButtonProps> = ({ label, section }) => {
   const { openModalWithParams } = useModalParams();
 
   const handleClick = () => {

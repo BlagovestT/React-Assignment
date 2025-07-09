@@ -15,7 +15,7 @@ export const Auth: React.FC = () => {
   return (
     <AuthContainer>
       <AuthCard>
-        <AuthTitle>Welcome to Aray</AuthTitle>
+        <AuthTitle>Welcome to Yara</AuthTitle>
         <AuthForm onSubmit={handleSubmit}>
           <AuthInput
             type="text"

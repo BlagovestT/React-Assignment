@@ -16,7 +16,7 @@ export const Header: React.FC = () => {
       <HeaderNav>
         <HeaderLogo>
           <LogoIcon className="fa-solid fa-tractor" />
-          <h2>Aray</h2>
+          <h2>Yara</h2>
         </HeaderLogo>
         <HeaderMenu>
           <HeaderLinks>
