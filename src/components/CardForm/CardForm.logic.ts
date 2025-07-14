@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from "react";
 import { useAppContext } from "../../hooks/useAppContext";
+import { useModalContext } from "../../hooks/useModalContext";
 import { useModalParams } from "../../hooks/useModalParams";
 import type { Card, CardFormData } from "../../types/cardType";
 import type { AppData } from "../../types/appDataType";
@@ -13,7 +14,8 @@ const DEFAULT_FORM_DATA: CardFormData = {
 };
 
 export const CardFormLogic = (section: keyof AppData) => {
-  const { modalState, data, setData } = useAppContext();
+  const { data, setData } = useAppContext();
+  const { modalState } = useModalContext();
   const { closeModalWithParams } = useModalParams();
 
   const [formData, setFormData] = useState<CardFormData>(DEFAULT_FORM_DATA);

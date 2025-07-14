@@ -1,16 +1,12 @@
 import { createContext, useState, useCallback, useMemo } from "react";
 import type { ReactNode } from "react";
 import type { AppData } from "../types/appDataType";
-import type { Card, ModalState } from "../types/cardType";
+import type { Card } from "../types/cardType";
 
 type AppContextType = {
   // Data from JSON
   data: AppData;
   setData: (data: AppData) => void;
-
-  modalState: ModalState;
-  openModal: (card?: Card, section?: keyof AppData) => void;
-  closeModal: () => void;
 
   isLoading: boolean;
   setIsLoading: (loading: boolean) => void;
@@ -36,29 +32,7 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
     news: [],
   });
 
-  const [modalState, setModalState] = useState<ModalState>({
-    isOpen: false,
-    card: null,
-    section: undefined,
-  });
-
   const [isLoading, setIsLoading] = useState(false);
-
-  const openModal = useCallback((card?: Card, section?: keyof AppData) => {
-    setModalState({
-      isOpen: true,
-      card: card || null,
-      section: section,
-    });
-  }, []);
-
-  const closeModal = useCallback(() => {
-    setModalState({
-      isOpen: false,
-      card: null,
-      section: undefined,
-    });
-  }, []);
 
   const addCard = useCallback((card: Card, section: keyof AppData) => {
     setData((prevData) => ({
@@ -87,9 +61,6 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
     () => ({
       data,
       setData,
-      modalState,
-      openModal,
-      closeModal,
       isLoading,
       setIsLoading,
       addCard,
@@ -98,9 +69,6 @@ export const AppProvider: React.FC<AppProviderProps> = ({ children }) => {
     }),
     [
       data,
-      modalState,
-      openModal,
-      closeModal,
       isLoading,
       addCard,
       updateCard,
