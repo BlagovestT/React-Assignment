@@ -16,6 +16,8 @@ export const SectionContainer = styled.section<SectionContainerProps>`
         return `background-color: ${colors.accent};`;
       case "half-width":
         return `width: 50%;`;
+      default:
+        return `background-color: ${colors.background};`;
     }
   }}
   @media (min-width: 2000px) {

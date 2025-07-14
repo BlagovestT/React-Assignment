@@ -1,7 +1,34 @@
-import { Auth } from "../components/Auth/Auth";
+import { AuthLogic } from "../components/Auth/Auth.logic";
+import {
+  AuthContainer,
+  AuthCard,
+  AuthTitle,
+  AuthForm,
+  AuthInput,
+  AuthButton,
+  ErrorMessage,
+} from "../components/Auth/Auth.styles";
 
 const AuthPage = () => {
-  return <Auth />;
+  const { name, error, handleSubmit, handleNameChange } = AuthLogic();
+  return (
+    <AuthContainer>
+      <AuthCard>
+        <AuthTitle>Welcome to Yara</AuthTitle>
+        <AuthForm onSubmit={handleSubmit}>
+          <AuthInput
+            type="text"
+            placeholder="Enter your name"
+            value={name}
+            onChange={handleNameChange}
+            autoFocus
+          />
+          {error && <ErrorMessage>{error}</ErrorMessage>}
+          <AuthButton type="submit">Login</AuthButton>
+        </AuthForm>
+      </AuthCard>
+    </AuthContainer>
+  );
 };
 
 export default AuthPage;
