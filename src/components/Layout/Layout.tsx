@@ -20,9 +20,6 @@ const LoadingScreen: React.FC = () => (
         <Hero />
         <SkeletonTheme baseColor="#e8e8e8" highlightColor="#f0f0f0">
           <SkeletonSection />
-          <SkeletonSection />
-          <SkeletonSection />
-          <SkeletonSection />
         </SkeletonTheme>
       </Content>
     </MainContainer>
