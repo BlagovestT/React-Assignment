@@ -1,6 +1,6 @@
 import { Card } from "../Card/Card";
 import Section from "../Section/Section";
-import { NewsLogic } from "./newsLogic";
+import { NewsLogic } from "./News.logic";
 
 export const News: React.FC = () => {
   const { news } = NewsLogic();

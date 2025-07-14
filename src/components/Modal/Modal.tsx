@@ -1,4 +1,4 @@
-import { ModalLogic } from "./modalLogic";
+import { ModalLogic } from "./Modal.logic";
 import { CardForm } from "../CardForm/CardForm";
 import {
   ModalOverlay,

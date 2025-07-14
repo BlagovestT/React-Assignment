@@ -11,6 +11,14 @@ import NewsPage from "./pages/NewsPage";
 import FeaturesPage from "./pages/FeaturesPage";
 
 function App() {
+  const renderProtectedRoute = (PageComponent: React.FC) => (
+    <ProtectedRoute>
+      <Layout>
+        <PageComponent />
+      </Layout>
+      <Modal />
+    </ProtectedRoute>
+  );
   return (
     <AppProvider>
       <GlobalStyle />
@@ -19,53 +27,10 @@ function App() {
         <Route path="/auth" element={<AuthPage />} />
 
         {/* Protected routes */}
-        <Route
-          path="/"
-          element={
-            <ProtectedRoute>
-              <Layout>
-                <HomePage />
-              </Layout>
-              <Modal />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/media"
-          element={
-            <ProtectedRoute>
-              <Layout>
-                <MediaPage />
-              </Layout>
-              <Modal />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/news"
-          element={
-            <ProtectedRoute>
-              <Layout>
-                <NewsPage />
-              </Layout>
-              <Modal />
-            </ProtectedRoute>
-          }
-        />
-
-        <Route
-          path="/features"
-          element={
-            <ProtectedRoute>
-              <Layout>
-                <FeaturesPage />
-              </Layout>
-              <Modal />
-            </ProtectedRoute>
-          }
-        />
+        <Route path="/" element={renderProtectedRoute(HomePage)} />
+        <Route path="/media" element={renderProtectedRoute(MediaPage)} />
+        <Route path="/news" element={renderProtectedRoute(NewsPage)} />
+        <Route path="/features" element={renderProtectedRoute(FeaturesPage)} />
       </Routes>
     </AppProvider>
   );

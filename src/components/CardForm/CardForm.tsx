@@ -1,4 +1,4 @@
-import { CardFormLogic } from "./Cardform.logic";
+import { CardFormLogic } from "./CardForm.logic";
 import type { AppData } from "../../types/appDataType";
 import {
   FormContainer,

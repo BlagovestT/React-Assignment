@@ -1,6 +1,6 @@
 import { Card } from "../../Card/Card";
 import Section from "../../Section/Section";
-import { EventsLogic } from "./eventsLogic";
+import { EventsLogic } from "./Events.logic";
 
 export const Events: React.FC = () => {
   const { events } = EventsLogic();

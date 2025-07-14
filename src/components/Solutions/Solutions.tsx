@@ -1,6 +1,6 @@
 import { Card } from "../Card/Card";
 import Section from "../Section/Section";
-import { SolutionsLogic } from "./solutionsLogic";
+import { SolutionsLogic } from "./Solution.logic";
 
 export const Solutions: React.FC = () => {
   const { solutions } = SolutionsLogic();

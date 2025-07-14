@@ -1,4 +1,4 @@
-import { AuthLogic } from "./authLogic";
+import { AuthLogic } from "./Auth.logic";
 import {
   AuthContainer,
   AuthCard,

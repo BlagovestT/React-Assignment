@@ -120,8 +120,6 @@ export const CardFormLogic = (section: keyof AppData) => {
   );
 
   const handleCancel = useCallback(() => {
-    setFormData(DEFAULT_FORM_DATA);
-    setErrors({});
     closeModalWithParams();
   }, [closeModalWithParams]);
 

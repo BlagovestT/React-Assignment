@@ -1,6 +1,6 @@
 import { Card } from "../../Card/Card";
 import Section from "../../Section/Section";
-import { PodcastLogic } from "./podcastLogic";
+import { PodcastLogic } from "./Podcast.logic";
 
 export const Podcast: React.FC = () => {
   const { podcasts } = PodcastLogic();

@@ -1,6 +1,6 @@
 import { Card } from "../Card/Card";
 import Section from "../Section/Section";
-import { FeaturedLogic } from "./featuredLogic";
+import { FeaturedLogic } from "./Featured.logic";
 
 export const Featured: React.FC = () => {
   const { featured } = FeaturedLogic();
