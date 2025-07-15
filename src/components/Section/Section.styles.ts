@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { colors, spacing, fontSize } from "../theme/globalStyles";
+import { colors, spacing, fontSize } from "../../theme/globalStyles";
 
-type ContainerVariant = "accent" | "half-width";
+export type ContainerVariant = "accent" | "half-width";
 
 type SectionContainerProps = {
   variant?: ContainerVariant;
@@ -16,6 +16,8 @@ export const SectionContainer = styled.section<SectionContainerProps>`
         return `background-color: ${colors.accent};`;
       case "half-width":
         return `width: 50%;`;
+      default:
+        return `background-color: ${colors.background};`;
     }
   }}
   @media (min-width: 2000px) {
@@ -82,7 +84,7 @@ export const SectionTitle = styled.h2`
 `;
 
 // Grid Variants
-type GridVariant = "wrap" | "column" | "row";
+export type GridVariant = "wrap" | "column" | "row";
 
 type SectionGridProps = {
   variant?: GridVariant;

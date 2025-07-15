@@ -1,8 +1,8 @@
-import { useAppContext } from "../../hooks/useAppContext";
+import { useModalContext } from "../../hooks/useModalContext";
 import { useModalParams } from "../../hooks/useModalParams";
 
 export const ModalLogic = () => {
-  const { modalState } = useAppContext();
+  const { modalState } = useModalContext();
   const { closeModalWithParams } = useModalParams();
 
   const handleOverlayClick = (e: React.MouseEvent) => {

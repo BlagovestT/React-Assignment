@@ -1,12 +1,14 @@
 import { useEffect, useCallback, useRef } from "react";
 import { useSearchParams } from "react-router-dom";
 import { useAppContext } from "./useAppContext";
+import { useModalContext } from "./useModalContext";
 import type { AppData } from "../types/appDataType";
 import type { Card } from "../types/cardType";
 
 export const useModalParams = () => {
   const [searchParams, setSearchParams] = useSearchParams();
-  const { data, modalState, openModal, closeModal } = useAppContext();
+  const { data } = useAppContext();
+  const { modalState, openModal, closeModal } = useModalContext();
 
   // Track previous params to avoid unnecessary effects
   const prevParamsRef = useRef<string>("");

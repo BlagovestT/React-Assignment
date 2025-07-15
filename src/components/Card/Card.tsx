@@ -1,4 +1,4 @@
-import { CardLogic } from "./cardLogic";
+import { CardLogic } from "./Card.logic";
 import type { Card as CardType } from "../../types/cardType";
 import type { CardVariant } from "../../types/cardType";
 import type { AppData } from "../../types/appDataType";

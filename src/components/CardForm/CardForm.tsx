@@ -1,4 +1,4 @@
-import { CardFormLogic } from "./cardFormLogic";
+import { CardFormLogic } from "./CardForm.logic";
 import type { AppData } from "../../types/appDataType";
 import {
   FormContainer,
@@ -34,6 +34,8 @@ export const CardForm: React.FC<CardFormProps> = ({ section }) => {
             type="text"
             id="title"
             name="title"
+            min={2}
+            max={20}
             value={formData.title || ""}
             onChange={handleInputChange}
             placeholder="Enter card title (optional)"
@@ -47,6 +49,8 @@ export const CardForm: React.FC<CardFormProps> = ({ section }) => {
             type="text"
             id="subtitle"
             name="subtitle"
+            min={2}
+            max={30}
             value={formData.subtitle || ""}
             onChange={handleInputChange}
             placeholder="Enter card subtitle (optional)"
